@@ -22,3 +22,9 @@ add_executable(main src/main.cpp)
 add_executable(a2 src/a2.cpp)
 add_executable(a3 src/a3.cpp)
 add_executable(a5 src/a5.cpp src/string_maker.cpp)
+add_executable(a6 src/a6.cpp src/circle.cpp src/rectangle.cpp src/triangle.cpp)
+configure_file(
+    ${CMAKE_SOURCE_DIR}/resources/shapes.txt
+    ${CMAKE_BINARY_DIR}/shapes.txt
+    COPYONLY
+)
